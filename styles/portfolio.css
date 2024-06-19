@@ -1,0 +1,190 @@
+/* font-family: "Playfair Display",
+ serif;
+ font-family: "Poppins",
+ sans-serif; */
+/*copy the code to use the fonts*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 96px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.hero {
+    background-color: #F9F7FE;
+    text-align: center;
+    padding: 80px 20px;
+    /* add space above and below the section */
+}
+
+/*use hero p{} to target the paragraph that is in the section hero*/
+
+.hero p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #272142;
+}
+
+.hero h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    line-height: 2;
+    font-size: 24px;
+
+}
+
+.content-container {
+    padding: 60px 20px;
+}
+
+.content h1 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.content-container h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    margin: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+content p {
+
+    font-size: 14px;
+}
+
+.btn-branding {
+    background: #6c63ff;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+    /* space around the words in the button*/
+}
+
+.btn-branding-outline {
+    background: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 15px 30px;
+
+}
+
+.project-description {
+    padding: 120px 60px;
+    /* space between image and text*/
+}
+
+.logo {
+    max-width: 150px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    line-height: 42px;
+    margin-left: 1px;
+}
+
+nav a {
+    /* targets the links on the navigation bar*/
+    text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+    color: #6c63ff
+}
+
+footer .contact-box {
+    background: #F9F7FE;
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+
+footer {
+    margin: 60px 0;
+}
+
+footer .social-links a {
+    /* targets each individual link */
+    margin: 0 20px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: white;
+    background: #272142;
+
+}
+
+.btn {
+    font-size: 18px;
+}
+
+@media(max-width:960px) {
+
+    /* the styles under media apply when the screen resolution is under 960px*/
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .project-description {
+        padding: 0;
+        text-align: center;
+    }
+
+}
