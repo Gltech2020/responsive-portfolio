@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- add Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- add Font awesome for creating icons like Instagram -->
+    <script src="https://kit.fontawesome.com/1f2e3d5756.js" crossorigin="anonymous"></script>
+    <!-- add Google fonts css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gladys is a professionally trained front-end engineer based in South Africa. She can 
+        work on projects using HTML, CSS and JavaScript. She is highly proficient in creating forms, apps and websites. ">
+
+    <title>Front-end developer- Gladys Masiiwa</title>
+</head>
+<!-- (general comment) export images and save them in the project, where you have the index.html on your machine-->
+
+<body>
+
+    <div class="container"> <!-- wrap with div container so you target the given attributes inside -->
+        <nav class="d-flex justify-content-between">
+            <a href="/" title="Homepage">
+                <img src="images/logo.png" class="logo d-none d-md-block" alt="Gladys logo" /> </a>
+            <!-- make it a class so you can target it in css -- d-none make the logo dissappear on smaller devices-->
+
+
+            <ul>
+                <li class="active">
+
+                    <a href="/" title="Homepage"> Home </a>
+                </li>
+
+                <li>
+                    <a href="/about.html" title="About Gladys">About</a>
+                </li>
+                <li><a href="/work.html" title="Gladys' work">Work</a>
+                </li>
+                <li><a href="/contact.html" title="Contact Gladys">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <p> 👋Hello,</p>
+            <h1>I'm Gladys Masiiwa</h1>
+            <h2 class="mb-5"> Front-end developer, based in South Africa</h2>
+            <!-- add class mb-5 to add more space bottom -->
+            <div> <!-- use div for button because it's an inline element -->
+                <a href="/contact.html" class="btn btn-branding" title="Contact me">Contact me</a>
+            </div>
+        </div>
+        <p class="text-center m-5">
+            Featured my best projects
+        </p>
+        <div class="container"><!-- to the text on the side(a grid) -->
+
+            <div class="row">
+                <div class="col d-none d-lg-block">
+                    <!-- d-none is don't display pic if screen is small, isplay if it's large-->
+                    <img src="images/yogurt.png" class="img-fluid" alt="Yogurt project preview">
+                    <!-- img-fluid makes image responsive -->
+                </div>
+                <div class="col">
+                    <div class="project-description"> <!-- add/ reduce space between the text and the image -->
+
+                        <h2 class="mb-5"> <!-- add space on the bottom of text -->
+                            Yogurt project
+                        </h2>
+                        <p class="mb-5 text-muted"> <!-- text-muted is a bootstrap class for opacity -->
+                            This app allows the user to learn more about our yogurt.       there live the blind texts.
+                            It show cases how to insert and use buttons on websites.
+                            
+                        </p>
+                        <a href="/work.html" class="btn btn-branding-outline"> Learn more</a>
+                        <!-- create a class for the button for styling -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <div class="project-description"> <!-- add/ reduce space between the text and the image -->
+
+                        <h2 class="mb-5"> <!-- add space on the bottom of text -->
+                            Weather App
+                        </h2>
+                        <p class="mb-5 text-muted"> <!-- text-muted is a bootstrap class for opacity -->
+                            The weather app prompts the user to enter their city
+                             to get the current weather as well as the weather forecast.
+                            
+                        </p>
+                        <a href="/work.html" class="btn btn-branding-outline"> Learn more</a>
+                        <!-- create a class for the button for styling -->
+                    </div>
+
+                </div>
+                <div class="col d-none d-lg-block">
+                    <!-- d-none is don't display pic if screen is small, isplay if it's large-->
+                    <img src="images/weather.png" class="img-fluid" alt="Weather project preview">
+                    <!-- img-fluid makes image responsive -->
+                </div>
+            </div>
+                       </div>
+            <footer>
+                <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+                    <div>
+                        <h3> Work Inquiry</h3>
+                        <p class="text-muted">Let's work together</p>
+                    </div>
+                    <div>
+                        <a href="/contact.html" class="btn btn-branding" title="Contact Gladys"> Contact me</a>
+                        <!-- text-muted gives it opacity make it lighter -->
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-5">
+                    <a href="mailto:gladmas10@gmail.com" class="email-link" title="Email Gladys">
+                        gladmas10@gmail.com</a>
+                </div>
+                <div class="social-links d-flex justify-content-center">
+                    <a href="https://www.instagram.com/gladys.masiiwa" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.github.com/Gltech2020" target="_blank" title="GitHub Profile"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/gladys.masiiwa" target="_blank" title="Facebook Profile"><i
+                            class="fa-brands fa-facebook"></i></a>
+
+                </div>
+                <!-- get the code for icons from font awesome. Google it -->
+                <p class="text-center mt-5">
+                    This project was coded by Gladys Masiiwa and is
+                    <a href="https://github.com/Gltech2020" target="_blank">open-sourced.</a>
+
+                </p>
+
+            </footer>
+        </div>
+</body>
+
+</html>
