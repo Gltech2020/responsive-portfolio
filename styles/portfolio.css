@@ -109,7 +109,10 @@ content p {
     padding: 120px 60px;
     /* space between image and text*/
 }
-
+.img-fluid{
+    max-width: 680px;
+    max-height: 3000px;
+}
 .logo {
     max-width: 150px;
 }
